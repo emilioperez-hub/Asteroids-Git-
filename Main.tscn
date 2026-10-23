@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://qy8fly73ro7u"]
+
+[ext_resource type="Script" uid="uid://bgwwbms7eommy" path="res://main.gd" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://dqsrgfca8v8w5" path="res://ship.tscn" id="2_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://0vejeporl1vq" path="res://asteroid.tscn" id="3_r0du0"]
+[ext_resource type="PackedScene" uid="uid://bsv7tsb2xejg6" path="res://Bullet.tscn" id="4_cm0pq"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_glv2v")
+
+[node name="Ship" parent="." instance=ExtResource("2_uu6xs")]
+position = Vector2(574, 321)
+
+[node name="asteroid" parent="." instance=ExtResource("3_r0du0")]
+position = Vector2(860, 286)
+
+[node name="Bullet" parent="." instance=ExtResource("4_cm0pq")]
+position = Vector2(632, 323)

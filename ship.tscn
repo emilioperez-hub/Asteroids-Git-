@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqsrgfca8v8w5"]
+
+[ext_resource type="Script" uid="uid://ddxhilbvaitlb" path="res://ship.gd" id="1_4cq66"]
+[ext_resource type="Texture2D" uid="uid://bfmx13uk8byr8" path="res://icon.svg" id="1_l3rv8"]
+[ext_resource type="PackedScene" uid="uid://bsv7tsb2xejg6" path="res://Bullet.tscn" id="2_v4325"]
+
+[node name="Ship" type="RigidBody2D" node_paths=PackedStringArray("pivot")]
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_4cq66")
+bullet = ExtResource("2_v4325")
+pivot = NodePath("pivot")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(20, 0)
+scale = Vector2(5.1908436, 5.190845)
+polygon = PackedVector2Array(-10.00355, -5.108526, -9.254408, -5.9646883, 1.186451, -5.997447, 2.0255241, -5.02291, 2.0469284, 5.0583963, 1.1907663, 5.957366, -9.275812, 6.042982, -10.00355, 5.0583963)
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.47949213, 0.47949213)
+texture = ExtResource("1_l3rv8")
+
+[node name="pivot" type="Node2D" parent="."]
+position = Vector2(0, -32.000004)
