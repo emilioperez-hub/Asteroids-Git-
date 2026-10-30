@@ -19,6 +19,6 @@ polygon = PackedVector2Array(0.22727251, 7, 5.560606, 7, 6.045454, 6, 6.045454, 
 script = SubResource("GDScript_7281b")
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(0.20000076, -0.3679657)
+position = Vector2(1.0587912e-22, 0)
 scale = Vector2(0.3046875, 0.08331299)
 texture = ExtResource("1_ayd6b")
